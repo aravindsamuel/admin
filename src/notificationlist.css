@@ -1,0 +1,31 @@
+.notification-container{
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    border-radius: 7px;
+    -webkit-box-shadow: 7px 7px 14px 0px rgba(219,219,219,1);
+    -moz-box-shadow: 7px 7px 14px 0px rgba(219,219,219,1);
+    box-shadow: 7px 7px 14px 0px rgba(219,219,219,1);
+
+}
+.notification-content{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+.notification-time{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+@media (max-width:450px) {
+    .notification-container{
+        display: block;
+    }
+
+}

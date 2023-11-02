@@ -1,0 +1,23 @@
+:root {
+    --black: black;
+    --white: #ffffff;
+    --light-white-1 : rgb(249, 249, 249);
+}
+.order{
+    height: 100vh;
+}
+.orders-container{
+    display: flex;
+    padding-top: 60px;
+    height: 100%;
+    background-color: var(--light-white-1);
+}
+.orders{
+    width: 100%;
+    height:100%;
+}   
+.orderstitle{
+    padding: 5px 10px 0 20px;
+    font-size: 30px;
+    margin: 0;
+}

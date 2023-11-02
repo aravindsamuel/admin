@@ -1,0 +1,23 @@
+.chart{
+    width: 64%;
+    -webkit-box-shadow: 7px 7px 14px 0px rgba(219,219,219,1);
+    -moz-box-shadow: 7px 7px 14px 0px rgba(219,219,219,1);
+    box-shadow: 7px 7px 14px 0px rgba(219,219,219,1);
+    border-radius: 7px;
+    padding: 10px;
+}
+.chartGrid{
+    stroke: lightgray;
+}
+.charttitle{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding-left: 10px;
+    color: gray;
+}
+@media (max-width:550px) {
+    .chart{
+        width: 100%;
+    }
+}
