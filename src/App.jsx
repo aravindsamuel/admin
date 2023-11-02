@@ -1,6 +1,6 @@
 import Home from './Home';
 import SingleUser from './SingleUser';
-import { BrowserRouter , Routes, Route } from 'react-router-dom';
+import { HashRouter , Routes, Route } from 'react-router-dom';
 import Users from './Users';
 import Products from './Products';
 import SingleProduct from './SingleProduct';
@@ -11,32 +11,24 @@ import Notification from './Notification';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
-      <Route path="/">
-        <Route index element={<Home />} />
+      <Route>
+        <Route path='/' element={<Home />} />
 
-        <Route path="users">
-          <Route index element={<Users />} />
+          <Route path='/users' element={<Users />} />
           <Route path="/users/:id" element={<SingleUser />} />
-        </Route>
 
-        <Route path="products">
-          <Route index element={<Products />} />
+          <Route path='/products' element={<Products />} />
           <Route path="/products/:id" element={<SingleProduct />} />
-        </Route>
 
-        <Route path="orders">
-          <Route index element={<Orders />} />
-        </Route>
+          <Route path='/orders' element={<Orders />} />
 
-        <Route path="notification">
-          <Route index element={<Notification />} />
-        </Route>
+          <Route path='/notification' element={<Notification />} />
 
       </Route>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>  
   );
 }
